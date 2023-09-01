@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cabin:wght@600;700&display=swap');
+
+:root {
+    --cor-primaria: #A66639;
+    --cor-secundaria: #0F1A20;
+    --cor-terciaria: aliceblue;
+
+    --fonte-primaria: 'Abel', sans-serif;
+    --fonte-secundaria: 'Cabin', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #A66639;
+}
+
+.cabeca {
+    padding: 2% 0 0 18%;
+}
+
+.cabeca__menu {
+    display: flex;
+    gap: 70px;
+}
+
+.cabeca__menu__link {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    color: #14110F;
+    text-decoration: none;
+}
+
+.apresentacao__principal {
+    padding: 2% 2%;
+    display: flex;
+    align-items: center;
+}
+
+.divisao__principal {
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    padding: 5%;
+    gap: 50px;
+
+}
+
+.apresentacao__titulo {
+    border: 3px solid #0F1A20;
+    border-radius: 2px;
+    background-color: #0F1A20;
+    font-size: 2.5rem;
+    font-family: 'Abel', sans-serif;
+    color: aliceblue;
+}
+
+.apresentacao__titulo:hover {
+    border: 3px solid #0F1A20;
+    border-radius: 2px;
+    background-color: #0F1A20;
+    color: #3DEA04;
+}
+
+.apresentacao__paragrafo {
+    font-size: 1.5rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.footer__danti {
+    padding: 24px;
+    color: var(--cor-terciaria);
+    background-color: #0F1A20;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao__principal {
+        flex-direction: column;
+    }
+
+    .apresentacao__imagem {
+        width: 70%;
+    }
+
+    .apresentacao__titulo {
+        text-align: center;
+    }
+
+    .apresentacao__paragrafo {
+        padding: 2% 22% 0 22%;
+    }
+
+    .cabeca__menu__link { 
+        font-size: 1.3rem;
+    }    
+
+    .cabeca__menu {
+        justify-content: center;
+    }
+
+    .cabeca {
+        padding: 8% 0 5% 0%;
+    }
+}
